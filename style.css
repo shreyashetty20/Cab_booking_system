@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    background:url(cabbook.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+    padding: 50px;
+}
+.form1
+{   
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(100,100,100,60%);
+}
+.btn
+{color:white;
+    border: royalblue;
+    background-color: royalblue;
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+}
+.name,.pno,.location,.drop,.pickupdate,.pickuptime
+{
+    margin: 10px;
+}

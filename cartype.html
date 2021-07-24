@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    text-align: center;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2
+{
+    padding: 50px;
+    text-align: center;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Car details</h2>
+<form action="connect2.php" method="POST">
+<div class="row">
+  <div class="column" >
+    <a href="code2.html"><img src="swift-5.jpg" width="240px" height="180px"></a>
+            <br>Brand:Swift
+            <br>
+            Seats:4<br>
+            AC:yes<br>
+            Rate:40 km/hr<br>
+            car_no:KA-13-02<input  type="radio" id="KA-13-02" name="car" value="KA-13-02"  ><br>
+  </div>
+  <div class="column" >
+    <a href="code2.html"><img src="ford -4.jpg" width="240px" height="180px"  ></a>
+    <br>Brand:Ford
+    <br>Seats:5<br>
+    AC:yes<br>
+    Rate:50 km/hr<br>
+    car_no:KA-13-04<input  type="radio" id="KA-13-04" name="car" value="KA-13-04"  ><br>
+    <br><br><br><input type="SUBMIT" value="SUBMIT" onclick="alert('Your cab is on the way.Thank you for using bookit.')">
+  </div>
+  <div class="column">
+    <a href="code2.html"><img src="toyata-6.jpg" width="240px" height="180px" ></a>
+    <br>Brand:Toyota
+    <br>
+            Seats:6<br>
+            AC:yes<br>
+            Rate:55 km/hr<br>
+            car_no:KA-12-01<input  type="radio" id="KA-12-01" name="car" value="KA-12-01a"  ><br>
+                
+  </div>
+</div>
+</form>
+</body>
+</html>
